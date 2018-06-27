@@ -1,0 +1,58 @@
+/* common */
+//@import "common/variables";
+@import "common/mixin";
+@import "common/fonts";
+@import "common/common";
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding-right: 80px;
+  padding-left: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.list {
+  margin-left: -40px;
+  margin-right: -40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: calc(100% / 3);
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.list-item__inner {
+  min-height: 475px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border: 4px solid #1698d9;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+  &::before {
+    width: 70px;
+    height: 4px;
+    background-color: #1698d9;
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    transform: rotate(-45deg);
+    content: '';
+  }
+  &::after {
+  }
+}
