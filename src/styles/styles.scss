@@ -38,6 +38,8 @@
 
 .list-item__inner {
   min-height: 475px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -57,5 +59,10 @@
 }
 
 .list-item__desk {
+  padding-top: 15px;
   color: #666666;
+}
+.list-item__title {
+  font-weight: bold;
+  font-size: 48px;
 }
