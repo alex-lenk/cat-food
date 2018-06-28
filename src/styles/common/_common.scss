@@ -11,7 +11,7 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   background: url(../img/bg/bg.jpg) repeat #000;
   display: flex;
   align-items: center;
@@ -128,4 +128,8 @@ button, input, select, textarea {
     outline: none;
     box-shadow: none;
   }
+}
+
+.color-gray {
+  color: #666666;
 }
