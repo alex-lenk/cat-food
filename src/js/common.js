@@ -12,18 +12,20 @@ $(document).ready(function () {
         );
         document.head.appendChild(msViewportStyle)
     }
-/*
-    $(".menu-toggle").click(
-        function () {
-            $('.nav-area').toggleClass('nav-opened');
-        }
-    );
 
-    $(function () {
-        $("a[href^='#']").click(function () {
-            var _href = $(this).attr("href");
-            $("html, body").animate({scrollTop: $(_href).offset().top + "px"});
-            return false;
-        });
-    });*/
+    var listItemActive = 'list-item__active';
+    var $listItem = $('.list-item');
+
+    function resetMenu() {
+        $listItem.removeClass(listItemActive);
+    }
+
+    $listItem.on('click', function (e) {
+        var $link = $(this);
+
+        e.preventDefault();
+        resetMenu();
+
+        $link.addClass(listItemActive);
+    });
 });

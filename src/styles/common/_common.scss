@@ -21,11 +21,12 @@ body {
 }
 
 a, .as-link {
-  color: #0080ce;
+  color: #1698d9;
   text-decoration: none;
+  border-bottom: 1px dashed;
   transition: color 0.3s ease;
   &:hover {
-    color: #178ace;
+    color: #2ea8e5;
   }
   &:focus {
     outline: none;
