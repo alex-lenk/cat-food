@@ -230,3 +230,7 @@
     display: block;
   }
 }
+
+.ie .list-inner::before {
+  display: none;
+}
