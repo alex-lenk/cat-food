@@ -1,17 +1,15 @@
-html {
-}
-
 html,
 body {
-  height: 100%;
-  color: #222;
+  color: #000;
   line-height: 1.4;
   font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 body {
   min-height: 100vh;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background: url(../img/bg/bg.jpg) repeat #000;
   display: flex;
   align-items: center;
@@ -48,37 +46,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #292121;
 }
 
-h1 {
-  margin-bottom: 25px;
-  @include font-size(30px);
-}
-
-h2 {
-  @include font-size(26px);
-}
-
-h3 {
-  @include font-size(22px);
-}
-
-h4 {
-  @include font-size(20px);
-}
-
-h5 {
-  @include font-size(18px);
-}
-
-h6 {
-  @include font-size(16px);
-}
-
-.list {
-  &-unstyled {
+.list-unstyled {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-  }
 }
 
 .text {
@@ -121,16 +92,4 @@ h6 {
 
 .clearfix {
   @include clearfix;
-}
-
-button, input, select, textarea {
-  &:focus,
-  &:active {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
-.color-gray {
-  color: #666666;
 }
